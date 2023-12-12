@@ -1,0 +1,21 @@
+.SocialLinks {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 20px;
+	font-size: 30px;
+	li {
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: all 0.25s ease;
+		}
+		a:hover {
+			color: red;
+		}
+	}
+	@media (max-width: 768px) {
+		display: none;
+	}
+}

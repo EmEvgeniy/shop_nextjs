@@ -1,0 +1,118 @@
+.Footer {
+	background: #363636;
+	padding: 20px 0;
+	width: 100%;
+	color: #fff;
+
+	.top {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+		width: 100%;
+		gap: 20px;
+		padding: 20px 0;
+
+		.logo {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			gap: 10px;
+			margin: 0 0 10px 0;
+
+			p {
+				font-size: 22px;
+				color: #d36d6d;
+				font-family: "Dancing Script", cursive;
+			}
+		}
+
+		.address {
+			font-size: 16px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			gap: 20px;
+		}
+	}
+
+	.top_item2 {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		width: 100%;
+		gap: 10px;
+	}
+
+	.top_item3 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-transform: uppercase;
+		gap: 20px;
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	.bottom {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		gap: 30px;
+		font-size: 35px;
+		padding: 20px 0 10px 0;
+		border-top: 1px solid #fff;
+		font-weight: 700;
+	}
+
+	.payment {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+		align-items: center;
+		gap: 20px;
+		justify-items: center;
+		width: 100%;
+		font-size: 14px;
+
+		.payment_inner {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			gap: 20px;
+		}
+	}
+
+	@media (max-width: 620px) {
+		.top_item2 {
+			justify-content: center;
+			text-align: center;
+		}
+
+		.top {
+			gap: 40px;
+			padding: 20px 0;
+		}
+
+		.logo {
+			align-items: center;
+			justify-content: center;
+		}
+
+		.address {
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+		}
+
+		.payment {
+			font-size: 10px;
+		}
+
+		.top_item3 {
+			font-size: 16px;
+			font-weight: 600;
+		}
+	}
+}
