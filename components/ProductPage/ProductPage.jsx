@@ -60,7 +60,7 @@ const ProductPage = () => {
 								<p>Price:</p> <span>$ {filteredProducts[0]?.price}</span>{" "}
 							</div>
 							<a href={generateWhatsAppLink()} target='__blank'>
-								Buy
+								What`s app
 							</a>
 						</div>
 					</div>
