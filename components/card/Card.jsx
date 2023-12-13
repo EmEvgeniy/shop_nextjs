@@ -6,7 +6,7 @@ import React from "react";
 
 const Card = ({ data }) => {
 	return (
-		<Link href={`/product/${data.name}`} className={classes.Card}>
+		<Link href={`/product/${data.title}`} className={classes.Card}>
 			<div className={classes.img}>
 				<LazyLoadImage
 					src={data?.photo_url}

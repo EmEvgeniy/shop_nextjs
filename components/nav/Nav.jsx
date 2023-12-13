@@ -30,7 +30,7 @@ export default function Nav() {
 							className={classes.Nav_item}
 							onMouseOver={() => setId(el.id)}
 							onMouseLeave={() => setId(null)}
-							href={`/category/${el.name}`}>
+							href={`/category/${el.id}`}>
 							<span>{el.name}</span>
 							{el.id === id && el.sub_categories.length ? (
 								<div
