@@ -19,6 +19,8 @@
 			border-radius: 12px;
 			transition: all 0.25s ease;
 			font-weight: 500;
+			min-width: 250px;
+			text-align: center;
 		}
 		.sub_category:hover {
 			color: rgba(191, 35, 35, 0.731);

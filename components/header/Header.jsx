@@ -1,7 +1,7 @@
 import Container from "../container/Container";
 import { Search } from "../search/Search";
 import classes from "./header.module.scss";
-import logo from "../../public/logo.png";
+import logo from "../../public/logo.svg";
 import Image from "next/image";
 import { SocialLinks } from "../socialLinks/SocialLinks";
 import Link from "next/link";

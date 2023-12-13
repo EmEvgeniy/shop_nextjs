@@ -6,7 +6,10 @@ import classes from "./socialLinks.module.scss";
 
 const list = [
 	{ link: "", icon: <WhatsAppIcon sx={{ fontSize: "inherit" }} /> },
-	{ link: "", icon: <InstagramIcon sx={{ fontSize: "inherit" }} /> },
+	{
+		link: "https://www.instagram.com/minzifa_hotel/",
+		icon: <InstagramIcon sx={{ fontSize: "inherit" }} />,
+	},
 	{ link: "", icon: <FacebookIcon sx={{ fontSize: "inherit" }} /> },
 	{ link: "", icon: <TwitterIcon sx={{ fontSize: "inherit" }} /> },
 ];
