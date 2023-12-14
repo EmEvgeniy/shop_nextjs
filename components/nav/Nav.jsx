@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 
 export default function Nav() {
 	const [id, setId] = useState(null);
+	const [id2, setId2] = useState(null);
 	const { data = [], isSuccess } = useGetAllCategoriesQuery();
 	const status = useSelector((state) => state.burger.value);
 
@@ -34,11 +35,25 @@ export default function Nav() {
 							<span>{el.name}</span>
 							{el.id === id && el.sub_categories.length ? (
 								<div
-									className={classes.sub_category}
+									className={
+										el.id === id
+											? `${classes.sub_category} ${classes.active}`
+											: `${classes.sub_category}`
+									}
 									onMouseOver={() => setId(el.id)}
 									onMouseLeave={() => setId(null)}>
 									{el.sub_categories.map((item) => (
-										<span key={item.id}>{item.name}</span>
+										<span
+											key={item.id}
+											className={
+												el.id === id
+													? `${classes.sub_category2} ${classes.active}`
+													: `${classes.sub_category2}`
+											}
+											onMouseOver={() => setId2(item.id)}
+											onMouseLeave={() => setId2(null)}>
+											{item.name}
+										</span>
 									))}
 								</div>
 							) : null}

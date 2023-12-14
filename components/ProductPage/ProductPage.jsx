@@ -24,7 +24,7 @@ const ProductPage = () => {
 		return whatsappLink;
 	};
 	const filteredProducts = useMemo(() => {
-		return products?.items?.filter((el) => el.title == params.slug);
+		return products?.items?.filter((el) => el.id == params.slug);
 	}, [products, params]);
 
 	useEffect(() => {
@@ -60,7 +60,7 @@ const ProductPage = () => {
 								<p>Price:</p> <span>$ {filteredProducts[0]?.price}</span>{" "}
 							</div>
 							<a href={generateWhatsAppLink()} target='__blank'>
-								What`s app
+								WhatsApp
 							</a>
 						</div>
 					</div>
